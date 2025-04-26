@@ -1,5 +1,5 @@
 import streamlit as st
-import random
+import pandas as pd
 import numpy as np
 from collections import deque
 from sklearn.preprocessing import LabelEncoder
