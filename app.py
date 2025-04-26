@@ -84,6 +84,9 @@ if st.session_state.pending_direction:
                     list(st.session_state.goalie_jump_history)[i-3:i]
                 )
                 y.append(st.session_state.goalie_jump_history[i])
+            import numpy as np
+            X = np.array(X)
+            y = np.array(y)
             st.session_state.model.fit(X, y)
 
         # Kết quả
